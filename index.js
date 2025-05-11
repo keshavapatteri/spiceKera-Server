@@ -51,13 +51,12 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:5173", // Replace with your actual frontend domain
+    origin: "https://spice-kera-client.vercel.app", // Replace with your actual frontend domain
     credentials: true,
   })
 );
-
-// https://spicekera.vercel.app
-
+//https://spice-kera-client.vercel.app
+//http://localhost:5173
 // Connect to database
 connectdb();
 
